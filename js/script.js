@@ -315,7 +315,7 @@ function rotateTo(angle) {
     $(window).scroll( function(){
     
         /* Check the location of each desired element */
-        $('.game').each( function(i){
+        $('.game-container').each( function(i){
             
             var bottom_of_object = $(this).offset().top + $(this).outerHeight();
             var bottom_of_window = $(window).scrollTop() + $(window).height() + 200;

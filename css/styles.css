@@ -331,16 +331,22 @@ h1 {
  
 
 /*GAME DESIGN*/
-.game-header { 
-    position: absolute;
+.game-header {
     margin: 0 auto;
-    left: 10%;
-    width: 50%;
-    height: 50px;
-    padding: 25px 0px;
-    transform: translateY(-55%);
-    color: #000D1A;
-    background-color: #1693A5;
+    width: 95%;
+    height: 10%;
+    color: #1693A5;
+    background-color: #000D1A;
+    font-size: 60px;
+    border-bottom: 12px solid #1693A5;
+    border-top: 12px solid #1693A5;
+}
+
+.game-container {
+    position: relative;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    border-bottom: 12px solid #1693A5;
 }
 
 #game-body {
@@ -365,28 +371,69 @@ h1 {
 }
 
 #game1 {
-    width: 1024px;
-    height: 500px;
+    float: left;
+    width: 50%;
+    height: 400px;
     background-image: url("../assets/turtle.png");
-    margin: 0 auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 0px auto;
     opacity: 1;
     overflow: auto;
 }
 
+#entry-header {
+    padding: 5% 0px 0px 0px;
+}
+
 #game2 {
-    width: 1024px;
-    height: 500px;
+    float: right;
+    width: 50%;
+    height: 400px;
     background-image: url("../assets/bird.png");
-    margin: 0 auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 0px auto;
+    opacity: 1;
     overflow: auto;
 }
 
 #game3 {
-    width: 1024px;
-    height: 500px;
+    float: left;
+    width: 50%;
+    height: 400px;
     background-image: url("../assets/moon.png");
-    margin: 0 auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 0px auto;
+    opacity: 1;
     overflow: auto;
+}
+
+.game-desc-left {
+    position:relative;
+    text-align: right;
+    float: left;
+    padding-right: 2%;
+    width: 45%;
+    height: auto;
+    margin: 0px auto
+    opacity: 1;
+    overflow: auto;
+    font-size: 24px;
+}
+
+.game-desc-right {
+    position:relative;
+    text-align: left;
+    float: right;
+    padding-right: 2%;
+    width: 45%;
+    height: auto;
+    margin: 0px auto
+    opacity: 1;
+    overflow: auto;
+    font-size: 24px;
 }
 
  @keyframes draw {
