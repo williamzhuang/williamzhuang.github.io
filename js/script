@@ -1,0 +1,190 @@
+$('.circle li:nth-child(1)').live('click', function() {
+	rotateTo(0);
+});
+$('.circle li:nth-child(2)').live('click', function() {
+	rotateTo(-90);
+});
+$('.circle li:nth-child(3)').live('click', function() {
+	rotateTo(-180);
+});
+$('.circle li:nth-child(4)').live('click', function() {
+	rotateTo(-270);
+});
+
+
+
+function rotateTo(angle) {
+	$('.menu a').css({
+		"color": "#1693A5",
+		"background": "none"
+	});
+
+	// Reset circle sizes.
+	$('.circle li:nth-child(1)').css({
+		"width": "73px",
+		"height": "73px",
+		"top": "8px",
+		"left": "160px",
+		"background": "#001a33",
+		"line-height": "73px",
+		"font-size": "16px",
+		"color": "#1693A5"
+	});
+
+	$('.circle li:nth-child(2)').css({
+		"width": "73px",
+		"height": "73px",
+		"top": "160px",
+		"left": "312px",
+		"background": "#001a33",
+		"line-height": "73px",
+		"font-size": "16px",
+		"color": "#1693A5"
+	});
+
+	$('.circle li:nth-child(3)').css({
+		"width": "73px",
+		"height": "73px",
+		"top": "312px",
+		"left": "160px",
+		"background": "#001a33",
+		"line-height": "73px",
+		"font-size": "16px",
+		"color": "#1693A5"
+	});
+
+	$('.circle li:nth-child(4)').css({
+		"width": "73px",
+		"height": "73px",
+		"top": "160px",
+		"left": "8px",
+		"background": "#001a33",
+		"line-height": "73px",
+		"font-size": "16px",
+		"color": "#1693A5"
+
+	});
+	// Increase size of highlighted circle
+	if (angle == 0) {
+		$('.one').css({
+			"color": "#000D1A",
+			"background": "#1693A5"
+		});
+
+		$('.circle li:nth-child(1)').css({
+			"width": "120px",
+			"height": "120px",
+			"top": "-25px",
+			"left": "132px",
+			"background": "#1693A5",
+			"line-height": "120px",
+			"font-size": "30px",
+			"color": "#000D1A",
+		});
+
+	}
+
+	if (angle == -90) {
+		$('.two').css({
+			"color": "#000D1A",
+			"background": "#1693A5"
+		});
+
+		$('.circle li:nth-child(2)').css({
+			"width": "120px",
+			"height": "120px",
+			"top": "132px",
+			"left": "290px",
+			"background": "#1693A5",
+			"line-height": "120px",
+			"font-size": "27px",
+			"color": "#000D1A",
+		});
+
+	}
+
+	if (angle == -180) {
+		
+		$('.three').css({
+			"color": "#000D1A",
+			"background": "#1693A5"
+		});
+
+		$('.circle li:nth-child(3)').css({
+			"width": "120px",
+			"height": "120px",
+			"top": "290px",
+			"left": "132px",
+			"background": "#1693A5",
+			"line-height": "120px",
+			"font-size": "30px",
+			"color": "#000D1A",
+		});
+
+	}
+
+	if (angle == -270) {
+		$('.four').css({
+			"color": "#000D1A",
+			"background": "#1693A5"
+		});
+
+		$('.circle li:nth-child(4)').css({
+			"width": "120px",
+			"height": "120px",
+			"top": "132px",
+			"left": "-25px",
+			"background": "#1693A5",
+			"line-height": "120px",
+			"font-size": "30px",
+			"color": "#000D1A",
+		});
+	}
+
+	// Rotating all circle elements
+	$('.circle').css({
+		"-webkit-transform": "rotate("+angle+"deg) translateZ(1px)",
+		"-moz-transform": "rotate("+angle+"deg) translateZ(1px)",
+		"-ms-transform": "rotate("+angle+"deg) translateZ(1px)",
+		"-o-transform": "rotate("+angle+"deg) translateZ(1px)",
+		"transform": "rotate("+angle+"deg) translateZ(1px)"
+	});
+
+	// Rotating selection circle text
+	var nAngle = -angle;
+	$('.circle li:nth-child(1)').css({
+		"z-index": "0", 
+		"-webkit-transform": "rotate("+nAngle+"deg) translateZ(1px)",
+		"-moz-transform": "rotate("+nAngle+"deg) translateZ(1px)",
+		"-ms-transform": "rotate("+nAngle+"deg) translateZ(1px)",
+		"-o-transform": "rotate("+nAngle+"deg) translateZ(1px)",
+		"transform": "rotate("+nAngle+"deg) translateZ(1px)",
+	});
+
+	$('.circle li:nth-child(2)').css({
+		"z-index": "0", 
+		"-webkit-transform": "rotate("+nAngle+"deg) translateZ(1px)",
+		"-moz-transform": "rotate("+nAngle+"deg) translateZ(1px)",
+		"-ms-transform": "rotate("+nAngle+"deg) translateZ(1px)",
+		"-o-transform": "rotate("+nAngle+"deg) translateZ(1px)",
+		"transform": "rotate("+nAngle+"deg) translateZ(1px)",
+	});
+
+	$('.circle li:nth-child(3)').css({
+		"z-index": "0", 
+		"-webkit-transform": "rotate("+nAngle+"deg) translateZ(1px)",
+		"-moz-transform": "rotate("+nAngle+"deg) translateZ(1px)",
+		"-ms-transform": "rotate("+nAngle+"deg) translateZ(1px)",
+		"-o-transform": "rotate("+nAngle+"deg) translateZ(1px)",
+		"transform": "rotate("+nAngle+"deg) translateZ(1px)",
+	});
+
+	$('.circle li:nth-child(4)').css({
+		"z-index": "0", 
+		"-webkit-transform": "rotate("+nAngle+"deg) translateZ(1px)",
+		"-moz-transform": "rotate("+nAngle+"deg) translateZ(1px)",
+		"-ms-transform": "rotate("+nAngle+"deg) translateZ(1px)",
+		"-o-transform": "rotate("+nAngle+"deg) translateZ(1px)",
+		"transform": "rotate("+nAngle+"deg) translateZ(1px)",
+	});
+}
