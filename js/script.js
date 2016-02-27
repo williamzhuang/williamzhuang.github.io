@@ -12,6 +12,28 @@ $(document).ready(function() {
     		"stroke-dasharray": "5000"
 		});
 	});
+
+	$('.game-desc div').css('font-size', '1em');
+    $('.game-desc h1').css('font-size', '2em');
+
+    while( $('.game-desc div').height() > $('.game-desc').height() ) {
+        $('.game-desc div').css('font-size', (parseInt($('.game-desc div').css('font-size')) - 1) + "px" );
+    }
+
+    while( $('.game-desc h1').height() > $('.game-desc').height() ) {
+        $('.game-desc h1').css('font-size', (parseInt($('.game-desc h1').css('font-size')) - 1) + "px" );
+    }
+
+    $('.game-me div').css('font-size', '1em');
+    $('.game-me h1').css('font-size', '2em');
+    
+    while( $('.game-me div').height() > $('.game-me').height() ) {
+        $('.game-me div').css('font-size', (parseInt($('.game-me div').css('font-size')) - 1) + "px" );
+    }
+
+    while( $('.game-me h1').height() > $('.game-me').height() ) {
+        $('.game-me h1').css('font-size', (parseInt($('.game-me h1').css('font-size')) - 1) + "px" );
+    }
 });
 
 var curAngle = 0;
@@ -28,7 +50,9 @@ $('.circle li:nth-child(1)').live('click', function() {
 $('.circle li:nth-child(2)').live('click', function() {
 	
 	if (curAngle == -90) {
-		$("body").fadeOut("slow");
+		$("body").fadeOut("slow", function() {
+			window.location.href = "projects.html";
+		});
 	}
 	rotateTo(-90);
 });
@@ -63,7 +87,9 @@ function clickMenu(angle) {
 
 	if (angle == -90) {
 		if (curAngle == -90) {
-			$("body").fadeOut("slow");
+			$("body").fadeOut("slow", function() {
+				window.location.href = "projects.html"
+			});
 		}
 		rotateTo(-90);
 	}
@@ -315,25 +341,57 @@ function rotateTo(angle) {
 		"transform": "rotate("+nAngle+"deg) translateZ(1px)",
 	});
 
-	/* Every time the window is scrolled ... */
-    $(window).scroll( function(){
-    
-        /* Check the location of each desired element */
-        $('.game-container').each( function(i){
-            
-            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
-            var bottom_of_window = $(window).scrollTop() + $(window).height() + 200;
-            
-            /* If the object is completely visible in the window, fade it it */
-            if( bottom_of_window > bottom_of_object ){
-                
-                $(this).animate({'opacity':'1'},500);
-                    
-            }
-            
-        }); 
-    
-    });
+	
 }
 
+/* Every time the window is scrolled ... */
+$(window).scroll( function(){
+
+    /* Check the location of each desired element */
+    $('.game-container').each( function(i){
+        
+        var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+        var bottom_of_window = $(window).scrollTop() + $(window).height() + 300;
+        
+        /* If the object is completely visible in the window, fade it it */
+        if( bottom_of_window > bottom_of_object ){
+            
+            $(this).animate({'opacity':'1'},500);
+                
+        }
+        
+    }); 
+
+});
+
+
+function scrollDown() {
+    $('html,body').animate({
+        scrollTop: $("#container-1").offset().top},
+        'slow');
+};
+
+window.onresize = function() {
+    $('.game-desc div').css('font-size', '1em');
+    $('.game-desc h1').css('font-size', '2em');
+
+    while( $('.game-desc div').height() > $('.game-desc').height() ) {
+        $('.game-desc div').css('font-size', (parseInt($('.game-desc div').css('font-size')) - 1) + "px" );
+    }
+
+    while( $('.game-desc h1').height() > $('.game-desc').height() ) {
+        $('.game-desc h1').css('font-size', (parseInt($('.game-desc h1').css('font-size')) - 1) + "px" );
+    }
+
+    $('.game-me div').css('font-size', '1em');
+    $('.game-me h1').css('font-size', '2em');
+    
+    while( $('.game-me div').height() > $('.game-me').height() ) {
+        $('.game-me div').css('font-size', (parseInt($('.game-me div').css('font-size')) - 1) + "px" );
+    }
+
+    while( $('.game-me h1').height() > $('.game-me').height() ) {
+        $('.game-me h1').css('font-size', (parseInt($('.game-me h1').css('font-size')) - 1) + "px" );
+    }
+};
 
