@@ -35,7 +35,9 @@ $('.circle li:nth-child(2)').live('click', function() {
 $('.circle li:nth-child(3)').live('click', function() {
 	
 	if (curAngle == -180) {
-		$("body").fadeOut("slow");
+		$("body").fadeOut("slow", function() {
+			window.location.href ="webdesign.html";
+		});
 	}
 	rotateTo(-180);
 });
@@ -68,7 +70,9 @@ function clickMenu(angle) {
 
 	if (angle == -180) {
 		if (curAngle == -180) {
-			$("body").fadeOut("slow");
+			$("body").fadeOut("slow", function() {
+				window.location.href = "webdesign.html";
+			});
 		}
 		rotateTo(-180);
 	}
