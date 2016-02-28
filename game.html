@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>William Zhuang :: Game Design</title>
+	<link href = "css/styles.css" rel = "stylesheet">
+	<link rel="stylesheet" href="css/animations.css">
+
+	<link href='https://fonts.googleapis.com/css?family=Oswald:300,400' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+
+	<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js'></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+	<script src='js/css3-animate-it.js'></script>
+
+	<script src = "js/script.js"></script>
+
+</head>
+<body id = "game-body">
+	
+    <div class = "svg-wrapper-about">
+      	<svg height = "60%" width = "100%" xmlns="http://www.w3.org/2000/svg">
+        	<rect class = "shape-about" height = "60%" width = "100%"\>
+      	</svg>
+    </div>
+
+    <div class = "circle-bg">
+    </div>
+
+	<div class="bg">  
+  		<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="236" viewBox="0 0 670 236">
+    		<path class="path" stroke="#1693A5" stroke-width="4" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-dasharray="500" stroke-dashoffset="500" fill="none" d="M335 38.9c-43.7 0-79.1 35.4-79.1 79.1s35.4 79.1 79.1 79.1 79.1-35.4 79.1-79.1-35.4-79.1-79.1-79.1zM335 182.9c-35.8 0-64.9-29.1-64.9-64.9s29.1-64.9 64.9-64.9 64.9 29.1 64.9 64.9-29.1 64.9-64.9 64.9z"/>
+  		</svg>
+
+	</div>
+
+	<div class = "game-me">
+		<div>
+			<h1>Love games? Me too.</h1>
+			<p>
+			In my free time, I enjoy making Android games using Java and the LibGDX framework. In addition to the coding, I also design all of the graphics in Adobe Photoshop and Illustrator and music in FL Studio.<br> <br>
+			<h3 onClick = "scrollDown()">&#8681</h3>
+			</p>
+		</div>
+    </div>
+
+    <div class = "spacer">
+    </div>
+    
+
+	<div class = "game-container" id = "container-1">
+
+		<a href = "https://play.google.com/store/apps/details?id=com.turtletower.game.android">
+		<div class = "game" id = "game1">
+		</div>
+		</a>
+
+		<div class = "game-desc" id = "game-desc-right">
+		<div>
+		<h1 id = "entry-header-right">Turtle Tower</h1>
+		A game I thought up while riding the bus up from Los Angeles to Berkeley. I passed by the Turtle Tower restaurant in SF and this just popped in my head. Designing all 100 turtles was quite the effort. Also my first foray into Google Play Services. I coded everything in Java and designed all art and UI/UX. 
+		</div>
+		</div>
+
+		<br style="clear:both;"/>
+	</div>
+	
+	<div class = "game-container" id = "container-2">
+		<a href = "https://play.google.com/store/apps/details?id=com.reactionaction.game.android">
+		<div class = "game" id = "game2">
+		</div>
+		</a>
+
+		<div class = "game-desc" id = "game-desc-left">
+		<div>
+		<h1 id = "entry-header-left">Star Bird</h1>
+		This actually started out as a game where the protagonist was a reactive particle. After experimenting with the art style and multiple redesigns, we settled on a bird in space escaping cats. Jukyung Choi handled the coding while I handled the art and UI/UX. Learned a lot about the advantages and shortcomings of the Android lifecycle. 
+		</div>
+		</div>
+
+		<br style="clear:both;"/>
+	</div>
+
+	<div class = "game-container" id = "container-3">
+		<a href = "https://play.google.com/store/apps/details?id=com.megamoonmadness.game.android">
+		<div class = "game" id = "game3">
+		</div>
+		</a>
+
+		<div class = "game-desc" id = "game-desc-right">
+			<div>
+			<h1 id = "entry-header-right">Mighty Moon</h1>
+			
+				Originally named Mega Moon Madness, this was the first game that I've ever released to the Android Play store. Katamari Damacy has always had a special place in my heart and this game was inspired by it. I decided to challenge myself to code, develop the art, and the music for this game within two weeks. After many sleepless nights, Mighty Moon was born. 
+			</div>
+		</div>
+
+		<br style="clear:both;"/>
+	</div>
+</body>
+</html>
