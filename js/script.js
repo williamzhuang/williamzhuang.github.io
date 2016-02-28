@@ -14,7 +14,7 @@ $(document).ready(function() {
 	});
 
 	// If the page is not the index, resize elements accordingly. 
-	if (location.href.split("/").slice(-1) != "index.html") {
+	if ((location.href.split("/").slice(-1) != "index.html") && (location.href.split("/").slice(-1) != "")) {
 		$('.game-desc div').css('font-size', '1.25em');
 	    $('.game-desc h1').css('font-size', '1.5em');
 
@@ -405,7 +405,7 @@ function scrollDown() {
 };
 
 window.onresize = function() {
-    if (location.href.split("/").slice(-1) != "index.html") {
+    if ((location.href.split("/").slice(-1) != "index.html") && (location.href.split("/").slice(-1) != "")) {
 		$('.game-desc div').css('font-size', '1.25em');
 	    $('.game-desc h1').css('font-size', '1.5em');
 
