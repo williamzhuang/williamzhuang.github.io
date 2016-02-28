@@ -574,6 +574,7 @@ h3:hover {
 
 #about2 {
     float: right;
+    background-image: url("../assets/logo.png");
 }
 
 #about3 {
@@ -586,10 +587,89 @@ h3:hover {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    height: 28vw;
-    width: 35vw;
+    height: 24vw;
+    width: 30vw;
     overflow:hidden;
 }
+
+#in-touch {
+    text-align: center;
+    width: 100%;
+}
+
+.btn {
+    text-align: center;
+    height: 5vw;
+    width: 15vw;
+    border: none;
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background: none;
+    cursor: pointer;
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    outline: none;
+    position: relative;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    max-width: 50%;
+    min-height: 45px;
+    min-width: 100px;
+}
+
+.btn:after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+/* Button 1 */
+.btn-1 {
+    border: 3px solid #1693A5;
+    color: #1693A5;
+}
+
+/* Button 1f */
+.btn-1f {
+    overflow: hidden;
+}
+
+.btn-1f:after {
+    width: 101%;
+    height: 0;
+    top: 50%;
+    left: 50%;
+    background: #fff;
+    opacity: 0;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.btn-1f:hover,
+.btn-1f:active {
+    color: #000D1A;
+    background-color: #1693A5;
+}
+
+.btn-1f:hover:after {
+    height: 75%;
+    opacity: 1;
+}
+
+.btn-1f:active:after {
+    height: 130%;
+    opacity: 1;
+}
+
 
  @keyframes draw {
   from{}
