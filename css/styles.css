@@ -431,7 +431,6 @@ h3:hover {
 }
 
 .game {
-    opacity: 0;
     width: 45%;
     height:100%;
     background-position: center;
@@ -440,8 +439,19 @@ h3:hover {
     margin: 0px auto;
     margin-left: 5%;
     margin-right: 5%;
-    opacity: 1;
+    opacity: 0.65;
     overflow: auto;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.game:hover {
+    opacity: 1;
+}
+
+.game:after {
+    opacity: 0.65;
 }
 
 #game1 {
