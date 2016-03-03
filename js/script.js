@@ -42,7 +42,7 @@ $(document).ready(function() {
 			$(".left").css('margin-left', '5%');
 			$(".text").css('text-align', 'center');
 			$(".text").css('font-size', '75px');
-			$(".text").css('margin-left', '3%');
+			$(".text").css('margin-left', '4%');
 			$(".svg-wrapper").css('margin-left', '4%');
 
 			$('rect').hide();
@@ -442,7 +442,7 @@ window.onresize = function() {
 			$(".left").css('margin-left', '5%');
 			$(".text").css('text-align', 'center');
 			$(".text").css('font-size', '75px');
-			$(".text").css('margin-left', '3%');
+			$(".text").css('margin-left', '4%');
 			$(".svg-wrapper").css('margin-left', '4%');
 
 			$('rect').hide();
