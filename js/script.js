@@ -40,9 +40,9 @@ $(document).ready(function() {
 			$(".wrapper").css('width', '100%');
 			$(".left").css('text-align', 'center');
 			$(".left").css('margin-left', '5%');
-			$(".left").css('font-size', '12px');
-			$(".text").css('text-align', 'right');
+			$(".text").css('text-align', 'center');
 			$(".text").css('font-size', '75px');
+			$(".text").css('margin-left', '3%');
 			$(".svg-wrapper").css('margin-left', '4%');
 
 			$('rect').hide();
@@ -58,6 +58,7 @@ $(document).ready(function() {
 			$(".left").css('margin-left', '0%');
 			$(".text").css('font-size', '35px');
 			$(".text").css('text-align', 'left');
+			$(".text").css('margin', '0 auto');
 			$(".svg-wrapper").css('margin-left', '10%');
 
 			document.getElementsByClassName("text")[0].innerHTML = "W I L L I A M &nbsp Z H U A N G";
@@ -439,9 +440,9 @@ window.onresize = function() {
 			$(".wrapper").css('width', '100%');
 			$(".left").css('text-align', 'center');
 			$(".left").css('margin-left', '5%');
-			$(".left").css('font-size', '12px');
-			$(".text").css('text-align', 'right');
+			$(".text").css('text-align', 'center');
 			$(".text").css('font-size', '75px');
+			$(".text").css('margin-left', '3%');
 			$(".svg-wrapper").css('margin-left', '4%');
 
 			$('rect').hide();
@@ -457,6 +458,7 @@ window.onresize = function() {
 			$(".left").css('margin-left', '0%');
 			$(".text").css('font-size', '35px');
 			$(".text").css('text-align', 'left');
+			$(".text").css('margin', '0 auto');
 			$(".svg-wrapper").css('margin-left', '10%');
 
 			document.getElementsByClassName("text")[0].innerHTML = "W I L L I A M &nbsp Z H U A N G";
