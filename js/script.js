@@ -40,8 +40,9 @@ $(document).ready(function() {
 			$(".wrapper").css('width', '100%');
 			$(".left").css('text-align', 'center');
 			$(".left").css('margin-left', '5%');
-			$(".text").css('text-align', 'center');
-			$(".text").css('font-size', '25px');
+			$(".left").css('font-size', '12px');
+			$(".text").css('text-align', 'right');
+			$(".text").css('font-size', '75px');
 			$(".svg-wrapper").css('margin-left', '4%');
 
 			$('rect').hide();
