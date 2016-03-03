@@ -434,13 +434,14 @@ window.onresize = function() {
 	    }
 	} else {
 		// Hide the selection menu.
-		if ($(window).width() <= 950) {
+		if (($(window).width() <= 950) || ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) )) {
 			$(".circle").hide();
 			$(".wrapper").css('width', '100%');
 			$(".left").css('text-align', 'center');
 			$(".left").css('margin-left', '5%');
-			$(".text").css('text-align', 'center');
-			$(".text").css('font-size', '25px');
+			$(".left").css('font-size', '12px');
+			$(".text").css('text-align', 'right');
+			$(".text").css('font-size', '75px');
 			$(".svg-wrapper").css('margin-left', '4%');
 
 			$('rect').hide();
