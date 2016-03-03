@@ -32,16 +32,9 @@
 body {
     position: absolute;
     width: 100%;
-    left: 50%;
-    transform: translateY(50%);
-    transform: translateX(-50%);
+    left: 0;
 	background-color: #000D1A;
 	overflow: hidden;
-	-webkit-transition: background 0.2s linear;
-    -moz-transition: background 0.2s linear;
-    -ms-transition: background 0.2s linear;
-    -o-transition: background 0.2s linear;
-    transition: background 0.2s linear;
 }
 
 h1 {
@@ -233,8 +226,6 @@ h3:hover {
 
 }
 
-
-
 .circle ul {
 	position: absolute;
 	display: block;
@@ -255,6 +246,12 @@ h3:hover {
 	font: 12px;
 	line-height: 73px;
 	float: left;
+
+    -webkit-transition: background 0.3s linear;
+    -moz-transition: background 0.3s linear;
+    -ms-transition: background 0.3s linear;
+    -o-transition: background 0.3s linear;
+    transition: background 0.3s linear;
 }
 
 /*INDIVIDUAL CIRCLES*/
@@ -268,7 +265,6 @@ h3:hover {
 	color: #000D1A;
 	line-height: 120px;
 	font-size: 30px;
-	color: #000D1A;
 
 	-webkit-transition: all 0.5s ease;
 	-moz-transition: all 0.5s ease;
@@ -570,11 +566,35 @@ h3:hover {
     float: left;
     text-align: center;
     position: relative;
+    opacity: 0.65;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+#about1:hover {
+    opacity: 1;
+}
+
+#about1:hover:after {
+    opacity: 0.65;
 }
 
 #about2 {
     float: right;
     background-image: url("../assets/logo.png");
+    opacity: 0.65;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+#about2:hover {
+    opacity: 1;
+}
+
+#about2:hover:after {
+    opacity: 0.65;
 }
 
 #about3 {
@@ -670,7 +690,47 @@ h3:hover {
     opacity: 1;
 }
 
+.back {
+    position: fixed;
+    top: 10%;
+    left: 5%;
+    width: 5%; 
+    height: 0;
+    padding-top: 5%;
+    opacity: 0.5;
+    background-image: url("../assets/back.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 10;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+    cursor: pointer;
 
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.back:hover {
+    opacity: 1.0;
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+
+.back:hover:after {
+    opacity: 0.5;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
  @keyframes draw {
   from{}
  

@@ -35,7 +35,7 @@ $(document).ready(function() {
 	} else {
 		// Hide the selection menu.
 		$('.circle').css('transform', "scale(1)");
-		if ($(window).width() <= 950) {
+		if (($(window).width() <= 950) || ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) )) {
 			$(".circle").hide();
 			$(".wrapper").css('width', '100%');
 			$(".left").css('text-align', 'center');
@@ -68,6 +68,13 @@ $(document).ready(function() {
 	}
 	
 });
+
+$('.back').live('click', function () {
+	$('*').fadeOut("slow", function() {
+		window.location.href = "index.html";
+	});
+});
+
 
 var curAngle = 0;
 
@@ -374,6 +381,7 @@ function rotateTo(angle) {
 		"transform": "rotate("+nAngle+"deg) translateZ(1px)",
 	});
 
+
 	
 }
 
@@ -457,4 +465,5 @@ window.onresize = function() {
 		}
 	}
 }
+
 
