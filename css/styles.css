@@ -580,6 +580,7 @@ h3:hover {
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     transition: all 0.3s;
+    overflow: hidden;
 }
 
 #about1:hover {

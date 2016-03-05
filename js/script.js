@@ -18,7 +18,7 @@ $(document).ready(function() {
 		$('.game-desc div').css('font-size', '1.25em');
 	    $('.game-desc h1').css('font-size', '1.5em');
 
-	    while( $('.game-desc div').height() +$('.game-desc h1').height() >= $('.game-desc').height() - 50) {
+	    while( $('.game-desc div').height() +$('.game-desc h1').height() > $('.game-desc').height() - 50) {
 	        $('.game-desc div').css('font-size', (parseInt($('.game-desc div').css('font-size')) - 1) + "px" );
 	        $('.game-desc h1').css('font-size', (parseInt($('.game-desc h1').css('font-size')) - 1) + "px" );
 	    }
@@ -26,8 +26,8 @@ $(document).ready(function() {
 	    $('.game-me div').css('font-size', '1.25em');
 	    $('.game-me h1').css('font-size', '1.5em');
 	    $('.game-me h3').css('font-size', '1.5em');
-	    
-	    while( $('.game-me div').height() + $('.game-me h1').height() + $('.game-me h3').height() >= $('svg').height()) {
+
+	    while( $('.game-me div').height() + $('.game-me h1').height() + $('.game-me h3').height() > $('svg').height()) {
 	        $('.game-me div').css('font-size', (parseInt($('.game-me div').css('font-size')) - 1) + "px" );
 	        $('.game-me h1').css('font-size', (parseInt($('.game-me h1').css('font-size')) - 1) + "px" );
 	        $('.game-me h3').css('font-size', (parseInt($('.game-me h3').css('font-size')) - 1) + "px" );
@@ -414,7 +414,7 @@ function scrollDown() {
         'slow');
 };
 
-window.onresize = function() {
+var handler = window.onresize = function() {
     if ((location.href.split("/").slice(-1) != "index.html") && (location.href.split("/").slice(-1) != "")) {
 		$('.game-desc div').css('font-size', '1.25em');
 	    $('.game-desc h1').css('font-size', '1.5em');
