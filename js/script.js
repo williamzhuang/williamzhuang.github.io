@@ -1,5 +1,5 @@
 $(document).ready(function() {
-	$("*").hide();
+
 	$("*").fadeIn("slow", function() {
 		$('.one').css({
 			"color": "#000D1A",
