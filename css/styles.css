@@ -540,7 +540,22 @@ h3:hover {
     background-image: url("../assets/fst.png");
 }
 
+#web3 {
+    float: right;
+    background-image: url("../assets/mary.png");
+}
+
 /*PROJECTS*/
+#project8 {
+    float: left;
+    background-image: url("../assets/hadoop.png");
+}
+
+#project7 {
+    float:right;
+    background-image: url("../assets/optimization.png");
+}
+
 #project6 {
     float: left;
     background-image: url("../assets/dna.png");
