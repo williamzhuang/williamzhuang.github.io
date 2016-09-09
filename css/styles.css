@@ -482,6 +482,11 @@ h3:hover {
 #game4 {
     float: right;
     background-image: url("../assets/demo.gif");
+    opacity: 1;
+}
+
+#game4:after {
+    opacity: 1;
 }
 
 .game-desc {
