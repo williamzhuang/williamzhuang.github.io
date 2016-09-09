@@ -479,6 +479,11 @@ h3:hover {
     background-image: url("../assets/moon.png");
 }
 
+#game4 {
+    float: right;
+    background-image: url("../assets/demo.png");
+}
+
 .game-desc {
     position:relative;
     width: 40%;
