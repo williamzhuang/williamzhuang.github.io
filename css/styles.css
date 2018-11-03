@@ -482,10 +482,6 @@ h3:hover {
     opacity: 1;
 }
 
-#game4:after {
-    opacity: 1;
-}
-
 .game-desc {
     position:relative;
     width: 40%;
