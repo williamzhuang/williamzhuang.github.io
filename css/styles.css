@@ -405,9 +405,6 @@ h3:hover {
     background-color: #001a33;
 }
 
-#container2 {
-
-}
 
 #container-3 {
     background-color: #001a33;
@@ -481,7 +478,7 @@ h3:hover {
 
 #game4 {
     float: right;
-    background-image: url("../assets/demo.gif");
+    background-image: url("../assets/kpopstory.png");
     opacity: 1;
 }
 
@@ -553,6 +550,11 @@ h3:hover {
 #web3 {
     float: right;
     background-image: url("../assets/mary.png");
+}
+
+#web4 {
+    float: left;
+    background-image: url("../assets/eunmi.png");
 }
 
 /*PROJECTS*/
