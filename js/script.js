@@ -1,5 +1,4 @@
 $(document).ready(function() {
-
 	$("*").fadeIn("slow", function() {
 		$('.one').css({
 			"color": "#000D1A",
@@ -69,6 +68,9 @@ $(document).ready(function() {
 		}
 	}
 	
+	var c = document.querySelectorAll('div');
+	c[c.length - 1].style = "display: none;";
+
 });
 
 $('.back').live('click', function () {
